@@ -20,9 +20,8 @@ Demo `Make-it-Real`: (Coming soon)
 <!-- [![Hugging Face Spaces(Coming soon)](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces/xxx) -->
 
 
-<video width="320" height="240" controls>
-  <source src="./assets/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+<video src="https://github.com/Aleafy/Make_it_Real/blob/main/assets/demo.mp4?raw=true" controls="controls">
+您的浏览器不支持 video 标签。
 </video>
 
 
