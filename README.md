@@ -20,52 +20,44 @@ Demo `Make-it-Real`: (Coming soon)
 <!-- [![Hugging Face Spaces(Coming soon)](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces/xxx) -->
 
 
-<video src="https://github.com/Aleafy/Make_it_Real/blob/main/assets/demo.mp4?raw=true" controls="controls">
+<!-- <video src="https://github.com/Aleafy/Make_it_Real/blob/main/assets/demo.mp4?raw=true" controls="controls">
 您的浏览器不支持 video 标签。
-</video>
+</video> -->
 
+![Demo](./assets/demo.gif)
 
 
 ## 📜 News
 🚀 [2024/4/26] The [paper](https://arxiv.org/abs/xxx) and [project page](https://sunzey.github.io/Make-it-Real) are released!
 
 ## 💡 Highlights
-- 🔥 **3.93%** improved zero-shot ImageNet classification accuracy when providing foreground alpha-map.
-- 🔥 **Plug-in and play** with region focus in **any work** that use CLIP vision encoder.
-- 🔥 **A strong visual encoder** as versatile tool when foreground mask is available.
+- 🔥 We first demonstrate that **GPT-4V** can effectively **recognize and describe materials**, allowing our model to precisely identifies and aligns materials with the corresponding components of 3D objects.
+- 🔥 We construct a **Material Library** containing thousands of materials with highly
+detailed descriptions readily for MLLMs to look up and assign.
+- 🔥 **An effective pipeline** for texture segmentation, material identification and matching, enabling the high-quality application of materials to
+3D assets.
 
 ## 👨‍💻 Todo
-- [ ] Training code for Alpha-CLIP based on Open-CLIP
-- [x] Evaluation code for Alpha-CLIP
-- [x] Zero-shot evaluation for Imagenet-S Classification and REC tasks.
-- [x] Web demo and local demo of Alpha-CLIP with LLaVA
-- [x] Web demo and local demo of Alpha-CLIP with Stable Diffusion
-- [x] Usage example notebook of Alpha-CLIP
-- [x] Checkpoints of Alpha-CLIP
+- [ ] Evaluation for Model-Generated Assets
+- [ ] Pipeline Inference Code
+- [ ] Huggingface Demos of Make-it-Real
+- [x] Paper and Web Demo
 
 ## ⚡ Quick Start
 
-##   ⭐ Demos
-<p align="center"> <a>  
-<img src="./img/demo1.gif"  width="900" />
-</a> </p>
 
 
 
-## ❤️ Acknowledgments
-- [CLIP](https://github.com/openai/CLIP): The codebase we built upon. Thanks for their wonderful work.
-- [LAVIS](https://github.com/salesforce/LAVIS): The amazing open-sourced multimodality learning codebase, where we test Alpha-CLIP in [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) and [BLIP-Diffusion](https://github.com/salesforce/LAVIS/tree/main/projects/blip-diffusion).
-- [Point-E](https://github.com/openai/point-e): Wonderful point-cloud generation model, where we test Alpha-CLIP for 3D generation task.
-- [LLaVA](https://github.com/haotian-liu/LLaVA): Wounderful MLLM that use CLIP as visual bacbone where we test the effectiveness of Alpha-CLIP.
+
 
 ## ✒️ Citation
 If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
 ```bibtex
-@misc{sun2023alphaclip,
-      title={Alpha-CLIP: A CLIP Model Focusing on Wherever You Want}, 
-      author={Zeyi Sun and Ye Fang and Tong Wu and Pan Zhang and Yuhang Zang and Shu Kong and Yuanjun Xiong and Dahua Lin and Jiaqi Wang},
-      year={2023},
-      eprint={2312.03818},
+@misc{fang2024makeitreal,
+      title={Make-it-Real: Unleashing Large Multimodal Model’s Ability for Painting 3D Objects with Realistic Materials}, 
+      author={Ye Fang and Zeyi Sun and Tong Wu and Jiaqi Wang and Ziwei Liu and Gordon Wetzstein and Dahua Lin},
+      year={2024},
+      eprint={},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
