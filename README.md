@@ -1,4 +1,4 @@
-# <img src="assets/icon2.png" style="vertical-align: -10px;" :height="40px" width="40px"> Make-it-Real
+# <img src="assets/icon2.png" style="vertical-align: -10px;" :height="50px" width="50px"> Make-it-Real
 
 **[Make-it-Real: Unleashing Large Multimodal Model’s Ability for Painting 3D Objects with Realistic Materials](https://arxiv.org/abs/xxx)**
 </br>
