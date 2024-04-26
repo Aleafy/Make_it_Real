@@ -28,7 +28,7 @@ Demo `Make-it-Real`: (Coming soon)
 
 
 ## 📜 News
-🚀 [2024/4/26] The [paper](https://arxiv.org/abs/xxx) and [project page](https://sunzey.github.io/Make-it-Real) are released!
+🚀 [2024/4/26] The [paper](https://arxiv.org/abs/2404.16829) and [project page](https://sunzey.github.io/Make-it-Real) are released!
 
 ## 💡 Highlights
 - 🔥 We first demonstrate that **GPT-4V** can effectively **recognize and describe materials**, allowing our model to precisely identifies and aligns materials with the corresponding components of 3D objects.
@@ -54,11 +54,11 @@ detailed descriptions readily for MLLMs to look up and assign.
 If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
 ```bibtex
 @misc{fang2024makeitreal,
-      title={Make-it-Real: Unleashing Large Multimodal Model’s Ability for Painting 3D Objects with Realistic Materials}, 
-      author={Ye Fang and Zeyi Sun and Tong Wu and Jiaqi Wang and Ziwei Liu and Gordon Wetzstein and Dahua Lin},
-      year={2024},
-      eprint={},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+    title={Make-it-Real: Unleashing Large Multimodal Model's Ability for Painting 3D Objects with Realistic Materials}, 
+    author={Ye Fang and Zeyi Sun and Tong Wu and Jiaqi Wang and Ziwei Liu and Gordon Wetzstein and Dahua Lin},
+    year={2024},
+    eprint={2404.16829},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
