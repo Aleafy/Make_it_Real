@@ -45,18 +45,23 @@ detailed descriptions readily for MLLMs to look up and assign.
 - [x] Paper and Web Demos
 
 ## 💾 Installation
-Prepare basic modules for deep learning 3d modeling tool(kaolin), rendering engine(blender), and segmentation model.
-
-See details in [INSTALL.md](INSTALL.md).
+Prepare basic modules for deep learning 3d modeling tool(kaolin), rendering engine(blender), and segmentation model. See details in [INSTALL.md](INSTALL.md).
 
 
 ## 📦 Data Preparation
-   1. **Annotations**: in `data/material_lib/annotations` folder, include:
-      - Highly-detailed descriptions by GPT-4V: offering thorough descriptions of the material’s visual characteristics and rich semantic information.
-      - Category-tree: Divided into a hierarchical structure with coarse and fine granularity, it includes over 80 subcategories.
-  
-   2. **PBR Maps**: You can download the complete PBR data collection at [Huggingface](https://huggingface.co/datasets/gvecchio/MatSynth/tree/main), or download the data used in our project at [OpenXLab](https://openxlab.org.cn/datasets/YeFang/MatSynth/tree/main) (Recommended).
-   3. **Material Images(optinal)**: You can download the material images file [here](https://drive.google.com/file/d/1ob7CV6JiaqFyjuCzlmSnBuNRkzt2qMSG/view?usp=sharing), to check and visualize the material appearance.
+ 1. **Annotations**: in `data/material_lib/annotations` folder, include:
+    - Highly-detailed descriptions by GPT-4V: offering thorough descriptions of the material’s visual characteristics and rich semantic information.
+    - Category-tree: Divided into a hierarchical structure with coarse and fine granularity, it includes over 80 subcategories.
+ 2. **PBR Maps**: You can download the complete PBR data collection at [Huggingface](https://huggingface.co/datasets/gvecchio/MatSynth/tree/main), or download the data used in our project at [OpenXLab](https://openxlab.org.cn/datasets/YeFang/MatSynth/tree/main) (Recommended).
+ 3. **Material Images(optinal)**: You can download the material images file [here](https://drive.google.com/file/d/1ob7CV6JiaqFyjuCzlmSnBuNRkzt2qMSG/view?usp=sharing), to check and visualize the material appearance.
+
+Make_it_Real
+└── data
+   └── material_lib
+      ├── annotations
+      ├── mat_images
+      └── pbr_maps
+
 
 
 ## ⚡ Quick Start
