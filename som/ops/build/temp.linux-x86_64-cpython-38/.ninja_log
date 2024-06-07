@@ -1,0 +1,10 @@
+# ninja log v5
+0	5873	1702389639300045861	/home/fangye/SoM/ops/build/temp.linux-x86_64-cpython-38/home/fangye/SoM/ops/src/cpu/ms_deform_attn_cpu.o	f4db9a42de40c72d
+0	15651	1702389649085138925	/home/fangye/SoM/ops/build/temp.linux-x86_64-cpython-38/home/fangye/SoM/ops/src/cuda/ms_deform_attn_cuda.o	8f919ecada8fc3db
+0	18545	1702389651968166344	/home/fangye/SoM/ops/build/temp.linux-x86_64-cpython-38/home/fangye/SoM/ops/src/vision.o	3e76690d30b4a575
+13	5418	1708684013897175224	/home/fangye/SoM/ops/build/temp.linux-x86_64-cpython-38/home/fangye/SoM/ops/src/cpu/ms_deform_attn_cpu.o	bd0d4492c24cc8f8
+13	15421	1708684023905273000	/home/fangye/SoM/ops/build/temp.linux-x86_64-cpython-38/home/fangye/SoM/ops/src/cuda/ms_deform_attn_cuda.o	7169cd0f3e9b83ac
+13	18240	1708684026713300433	/home/fangye/SoM/ops/build/temp.linux-x86_64-cpython-38/home/fangye/SoM/ops/src/vision.o	f23894c830972771
+27	5753	1716883079000000000	/mnt/petrelfs/fangye/Make-it-Real_project/som/ops/build/temp.linux-x86_64-cpython-38/mnt/petrelfs/fangye/Make-it-Real_project/som/ops/src/cpu/ms_deform_attn_cpu.o	25cfcf91a2592c07
+27	16399	1716883090000000000	/mnt/petrelfs/fangye/Make-it-Real_project/som/ops/build/temp.linux-x86_64-cpython-38/mnt/petrelfs/fangye/Make-it-Real_project/som/ops/src/cuda/ms_deform_attn_cuda.o	7f8e65747af90d3b
+27	18934	1716883093000000000	/mnt/petrelfs/fangye/Make-it-Real_project/som/ops/build/temp.linux-x86_64-cpython-38/mnt/petrelfs/fangye/Make-it-Real_project/som/ops/src/vision.o	7205ada76ed2cee2
