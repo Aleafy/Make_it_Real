@@ -12,7 +12,6 @@ from utils.tools import *
 from scripts.kaolin_scripts.load_cfg import render_model, paint_model_w_mask
 
 import os
-import pdb
 import argparse
 
 def args():
@@ -40,7 +39,6 @@ if __name__ == '__main__':
     eval_cfg = gen_eval_yaml(exp_name, texture_pth, pixel_t, obj_pth)        
     render_model(eval_cfg)
     
-    pdb.set_trace()
     # segment viewpoint image to get initial semantic masks
     seg_serial(folder_path, argv.fine_grain) 
     # refine masks and mark different parts by numbers

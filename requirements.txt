@@ -11,3 +11,4 @@ tqdm
 einops
 opencv-python
 openai
+pyyaml
