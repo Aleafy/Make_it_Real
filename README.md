@@ -55,6 +55,14 @@ Prepare basic modules for deep learning 3d modeling tool(kaolin), rendering engi
  2. **PBR Maps**: You can download the complete PBR data collection at [Huggingface](https://huggingface.co/datasets/gvecchio/MatSynth/tree/main), or download the data used in our project at [OpenXLab](https://openxlab.org.cn/datasets/YeFang/MatSynth/tree/main) (Recommended).
  3. **Material Images(optinal)**: You can download the material images file [here](https://drive.google.com/file/d/1ob7CV6JiaqFyjuCzlmSnBuNRkzt2qMSG/view?usp=sharing), to check and visualize the material appearance.
 
+<pre>
+Make_it_Real
+└── data
+    └── material_lib
+        ├── annotations
+        ├── mat_images
+        └── pbr_maps
+</pre>
 
 
 
