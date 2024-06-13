@@ -1,4 +1,5 @@
-💾 Installation
+### 💾 Installation
+
 1. Install basic modules: torch and packages in requirements.txt
    
    ```bash
@@ -21,7 +22,7 @@
 
    and Kaolin
    ```bash
-   pip install kaolin==0.11.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-1.10.1_cu111.html
+   pip install kaolin==0.13.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-1.10.1_cu111.html
    ```
    
 3. Install segment & mark utils:
@@ -30,5 +31,7 @@
    pip install git+https://github.com/UX-Decoder/Semantic-SAM.git@package
    # install Deformable Convolution for Semantic-SAM
    cd som/ops && sh make.sh && cd ..
+   # install detectron2
+   python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.10/index.html
    ```
    Get model weight through `bash som/ckpts/download_ckpt.sh`
