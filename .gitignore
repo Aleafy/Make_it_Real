@@ -16,6 +16,6 @@ output
 tmp
 main_mod.py
 scripts/gpt_eval
-som/ckpts
+som/ckpts/swinl_only_sam_many2many.pth
 .idea
 .vscode
