@@ -13,12 +13,19 @@ from scripts.kaolin_scripts.load_cfg import render_model, paint_model_w_mask
 
 import os
 import argparse
+import warnings
+
+# Set proxy environment variables for HTTP and HTTPS requests, to ensure proper functioning of GPT-4 in certain regions.
+# os.environ['http_proxy'] = 'http://<your_proxy>.example.com/'
+# os.environ['https_proxy'] = 'http://<your_proxy>.example.com/'
+# os.environ['HTTP_PROXY'] = 'http://<your_proxy>.example.com/'
+# os.environ['HTTPS_PROXY'] = 'http://<your_proxy>.example.com/'
 
 def args():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--obj_dir", default='data/mesh/gold_gun', type=str, help="Directory of .obj file.")
-    parser.add_argument("--exp_name", default='gold_gun', type=str, help="Experiment name(unique)")
-    parser.add_argument("--api_key", default='', type=str, help="Your own GPT-4V api key.") 
+    parser.add_argument("--obj_dir", default='data/mesh/kettle', type=str, help="Directory of .obj file.")
+    parser.add_argument("--exp_name", default='kettle', type=str, help="Experiment name(unique)")
+    parser.add_argument("--api_key", required=True, type=str, help="Your own GPT-4V api key.") 
     parser.add_argument("--fine_grain", default=False, type=bool, help="Segmentation grain.")
     parser.add_argument("--view_num", default=1, type=int, help="Number of view points.")
     parser.add_argument("--leave_list", default=[], type=list, help="Viewpoints to be queried.")
@@ -35,6 +42,9 @@ if __name__ == '__main__':
     folder_path = f'experiments/{exp_name}'
     result_path = f'experiments/{exp_name}/results'
     
+    if os.path.exists(folder_path):
+        warnings.warn("Experiment name already exists. Please verify if it's a duplicate.", UserWarning)
+
     # Render albedo-only model from multi-view
     eval_cfg = gen_eval_yaml(exp_name, texture_pth, pixel_t, obj_pth)        
     render_model(eval_cfg)

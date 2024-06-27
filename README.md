@@ -69,12 +69,15 @@ Make_it_Real
 
 ## ⚡ Quick Start
 #### Inference
-```python
+```bash
 python main.py --obj_dir <object_dir> --exp_name <unique_exp_name> --api_key <your_own_gpt4_api_key>
 ```
+- To ensure proper network connectivity for GPT-4V, add proxy environment settings in [main.py]()(optional). Also, please verify the reachability of your [API host]().
+- Result visualization (blender engine) is located in the `output/refine_output` dir. You can compare the result with that in `output/ori_output`. 
+
 #### Annotation Engine
 
-```python
+```bash
 cd scripts/gpt_anno
 python gpt4_query_mat.py
 ```

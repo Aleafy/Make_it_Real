@@ -1,11 +1,11 @@
 log:
-  exp_name: vase
+  exp_name: kettle4
   eval_only: true
 render:
   eval_grid_size: 1200
 guide:
-  shape_path: data/mesh/vase/vase.obj
-  initial_texture: data/mesh/vase/textures/Image_0.png
+  shape_path: data/mesh/kettle/kettle.obj
+  initial_texture: data/mesh/kettle/textures/Image_0.png
   texture_resolution: 1024
 optim:
   seed: 3

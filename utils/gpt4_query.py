@@ -65,8 +65,13 @@ def process_image(image_path, api_key, prompt):
         "max_tokens": 300
     }
 
-    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+    api_base = "https://api.openai.com/v1/chat/completions" # you can switch to another accessible GPT-4 API host
+    # response = requests.post(api_base, headers=headers, json=payload) # another way to get response
 
+    client = OpenAI(api_key=api_key,
+                base_url=api_base)
+    response = client.chat.completions.create(**payload)
+    
     return response
 
 

@@ -6,6 +6,15 @@ from tqdm import tqdm
 import time
 import re
 
+from openai import OpenAI
+
+# Set proxy environment variables for HTTP and HTTPS requests, to ensure proper functioning of GPT-4 in certain regions.
+# os.environ['http_proxy'] = 'http://<your_proxy>.example.com/'
+# os.environ['https_proxy'] = 'http://<your_proxy>.example.com/'
+# os.environ['HTTP_PROXY'] = 'http://<your_proxy>.example.com/'
+# os.environ['HTTPS_PROXY'] = 'http://<your_proxy>.example.com/'
+
+
 prompt = """You are showed with a group of spherical PBR materials(all made of {}, which is a kind of {}, in total {}), can you generate a caption for each(about 20~30 words), try to distinguish their difference. Only describe the appearance features (must including `color` and detailed `material`(such as patterns, roughness, metalness, concave and convex patterns, condition)), and don't give too much other information. Do not describe whether it is reflective or not. Do not describe the shape of overall object(such as sphere). Please use a dictionary to represent the output result {}"""
 
 # Your own OpenAI API Key
@@ -62,7 +71,12 @@ def process_image(image_path):
         "max_tokens": 300
     }
 
-    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+    api_base = "https://api.openai.com/v1/chat/completions" # you can switch to another accessible GPT-4 API host
+    # response = requests.post(api_base, headers=headers, json=payload) # another way to get response
+
+    client = OpenAI(api_key=api_key,
+                base_url=api_base)
+    response = client.chat.completions.create(**payload)
     return response
 
 if __name__ == "__main__":
