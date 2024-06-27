@@ -72,7 +72,7 @@ Make_it_Real
 ```bash
 python main.py --obj_dir <object_dir> --exp_name <unique_exp_name> --api_key <your_own_gpt4_api_key>
 ```
-- To ensure proper network connectivity for GPT-4V, add proxy environment settings in [main.py]()(optional). Also, please verify the reachability of your [API host]().
+- To ensure proper network connectivity for GPT-4V, add proxy environment settings in [main.py](https://github.com/Aleafy/Make_it_Real/blob/feb3563d57fbe18abbff8d4abfb48f71cc8f967b/main.py#L18) (optional). Also, please verify the reachability of your [API host](https://github.com/Aleafy/Make_it_Real/blob/feb3563d57fbe18abbff8d4abfb48f71cc8f967b/utils/gpt4_query.py#L68).
 - Result visualization (blender engine) is located in the `output/refine_output` dir. You can compare the result with that in `output/ori_output`. 
 
 #### Annotation Engine
@@ -81,6 +81,7 @@ python main.py --obj_dir <object_dir> --exp_name <unique_exp_name> --api_key <yo
 cd scripts/gpt_anno
 python gpt4_query_mat.py
 ```
+Note: Besides functinoning as annotation engine, you can also use this code to test the GPT-4V connection simply.
 
 <!-- [annotation code](scripts/gpt_anno) -->
 <!-- #### Evalutation -->
