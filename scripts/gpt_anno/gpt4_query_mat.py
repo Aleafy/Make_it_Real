@@ -14,11 +14,11 @@ from openai import OpenAI
 # os.environ['HTTP_PROXY'] = 'http://<your_proxy>.example.com/'
 # os.environ['HTTPS_PROXY'] = 'http://<your_proxy>.example.com/'
 
-
 prompt = """You are showed with a group of spherical PBR materials(all made of {}, which is a kind of {}, in total {}), can you generate a caption for each(about 20~30 words), try to distinguish their difference. Only describe the appearance features (must including `color` and detailed `material`(such as patterns, roughness, metalness, concave and convex patterns, condition)), and don't give too much other information. Do not describe whether it is reflective or not. Do not describe the shape of overall object(such as sphere). Please use a dictionary to represent the output result {}"""
 
 # Your own OpenAI API Key
 api_key = "" 
+assert api_key, "Error: api_key is empty! Please replace with Your own api_key."
 
 def process_image(image_path):
     # Function to encode the image
@@ -92,6 +92,6 @@ if __name__ == "__main__":
         except:
             time.sleep(2)
             continue
-        data[img_pth] = response.json()
+        data[img_pth] = json.loads(response.json())
         json.dump(data, open("./cache_result.json", 'w'), indent=4)
         
