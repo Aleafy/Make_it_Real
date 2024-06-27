@@ -81,7 +81,7 @@ python main.py --obj_dir <object_dir> --exp_name <unique_exp_name> --api_key <yo
 cd scripts/gpt_anno
 python gpt4_query_mat.py
 ```
-`Note:` Besides functinoning as annotation engine, you can also use this code ([gpt4_query_mat.py](https://github.com/Aleafy/Make_it_Real/blob/main/scripts/gpt_anno/gpt4_query_mat.py)) to test the GPT-4V connection simply.
+`Note`: Besides functinoning as annotation engine, you can also use this code ([gpt4_query_mat.py](https://github.com/Aleafy/Make_it_Real/blob/main/scripts/gpt_anno/gpt4_query_mat.py)) to test the GPT-4V connection simply.
 
 <!-- [annotation code](scripts/gpt_anno) -->
 <!-- #### Evalutation -->
