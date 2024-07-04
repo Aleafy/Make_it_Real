@@ -53,7 +53,7 @@ Prepare basic modules for deep learning 3d modeling tool(kaolin), rendering engi
  1. **Annotations**: in `data/material_lib/annotations` [folder](data/material_lib/annotations), include:
     - Highly-detailed descriptions by GPT-4V: offering thorough descriptions of the material’s visual characteristics and rich semantic information.
     - Category-tree: Divided into a hierarchical structure with coarse and fine granularity, it includes over 80 subcategories.
- 2. **PBR Maps**: You can download the complete PBR data collection at [Huggingface](https://huggingface.co/datasets/gvecchio/MatSynth/tree/main), or download the data used in our project at [OpenXLab](https://openxlab.org.cn/datasets/YeFang/MatSynth/tree/main) (Recommended).
+ 2. **PBR Maps**: You can download the complete PBR data collection at [Huggingface](https://huggingface.co/datasets/gvecchio/MatSynth/tree/main), or download the data used in our project at [OpenXLab](https://openxlab.org.cn/datasets/YeFang/MatSynth/tree/main) (Recommended). (If you have any questions, please refer to [issue#5](https://github.com/Aleafy/Make_it_Real/issues/5))
  3. **Material Images(optinal)**: You can download the material images file [here](https://drive.google.com/file/d/1ob7CV6JiaqFyjuCzlmSnBuNRkzt2qMSG/view?usp=sharing), to check and visualize the material appearance.
 
 <pre>
@@ -63,6 +63,10 @@ Make_it_Real
         ├── annotations
         ├── mat_images
         └── pbr_maps
+            ├── Ceremic
+            ├── Concrete
+            ├── ...
+            └── Wood
 </pre>
 
 
