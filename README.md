@@ -63,10 +63,11 @@ Make_it_Real
         ├── annotations
         ├── mat_images
         └── pbr_maps
-            ├── Ceremic
-            ├── Concrete
-            ├── ...
-            └── Wood
+            └── train
+                ├── Ceremic
+                ├── Concrete
+                ├── ...
+                └── Wood
 </pre>
 
 
